@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CpS301_API", "CpS301_API\CpS301_API.csproj", "{2F1F1590-585C-40A6-ADD6-9AC55BEF8BBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F1F1590-585C-40A6-ADD6-9AC55BEF8BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F1F1590-585C-40A6-ADD6-9AC55BEF8BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F1F1590-585C-40A6-ADD6-9AC55BEF8BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F1F1590-585C-40A6-ADD6-9AC55BEF8BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {329BBCB6-8BD8-4358-BBE8-D9ADB2572C81}
+	EndGlobalSection
+EndGlobal
