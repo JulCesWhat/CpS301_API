@@ -15,14 +15,18 @@ namespace CpS301_API.Models
         public virtual DbSet<Serviceevent> Serviceevent { get; set; }
         public virtual DbSet<Song> Song { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseMySql("Server=localhost;Port=3306;User Id=root;password=Password;Database=wsoapp");
-            }
-        }
+        //        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //        {
+        //            if (!optionsBuilder.IsConfigured)
+        //            {
+        //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+        //                optionsBuilder.UseMySql("Server=localhost;Port=3306;User Id=root;password=Password;Database=wsoapp");
+        //            }
+        //        }
+
+        public wsoappContext(DbContextOptions<wsoappContext> options)
+        : base(options)
+        { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
