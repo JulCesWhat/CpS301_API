@@ -1,0 +1,1 @@
+This is just a test. Initial commit for the GitHub proj.
