@@ -33,7 +33,7 @@ namespace CpS301_API
             //{
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
 
-            var connection = @"Server=localhost;Port=3306;User Id=root;password=Password;Database=wsoapp";
+            var connection = Startup.Configuration["connectionStrings:wsoappDBConnectionString"];
             services.AddDbContext<wsoappContext>(options => options.UseMySql(connection));
 
             //}
