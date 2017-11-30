@@ -208,7 +208,7 @@ namespace CpS301_API.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{cityId}/pointsofinterest/{id}"]
+        [HttpDelete("{cityId}/pointsofinterest/{id}")]
         public IActionResult DeletePointOfInterest(int cityId, int pointId)
         {
             var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
