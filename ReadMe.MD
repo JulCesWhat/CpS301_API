@@ -10,5 +10,5 @@ Ensure that your app.config has the appropriate connection string for the wsoapp
 Navigate to ```url forthcoming```.
 
 ## Authors
-[Cesar Whatley](www.linkedin.com)\s\s
+[Cesar Whatley](www.linkedin.com)  
 [Juan Alvarado](www.linkedin.com)
