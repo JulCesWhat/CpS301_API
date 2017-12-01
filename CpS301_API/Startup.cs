@@ -29,10 +29,6 @@ namespace CpS301_API
         {
             services.AddMvc();
 
-            //if (!optionsBuilder.IsConfigured)
-            //{
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-
             var connection = Startup.Configuration["connectionStrings:wsoappDBConnectionString"];
             services.AddDbContext<wsoappContext>(options => options.UseMySql(connection));
 
@@ -52,11 +48,6 @@ namespace CpS301_API
             app.UseStatusCodePages();
 
             app.UseMvc();
-
-            //app.Run(async (context) =>
-            //{
-            //    await context.Response.WriteAsync("Hello World!");
-            //});
         }
     }
 }
