@@ -11,4 +11,5 @@ Navigate to ```url forthcoming```.
 
 ## Authors
 [Cesar Whatley](www.linkedin.com)
+
 [Juan Alvarado](www.linkedin.com)
