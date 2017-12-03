@@ -261,4 +261,4 @@ __pycache__/
 *.pyc
 
 #My things section
-CpS301_API/*.txt
+*.txt
