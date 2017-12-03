@@ -27,6 +27,7 @@ namespace CpS301_API
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddMvc();
 
             var connection = Startup.Configuration["connectionStrings:wsoappDBConnectionString"];
@@ -42,6 +43,14 @@ namespace CpS301_API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            // Shows UseCors with CorsPolicyBuilder.
+            app.UseCors(
+                    options => options
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
 
             app.UseStatusCodePages();
 
