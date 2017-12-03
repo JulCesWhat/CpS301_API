@@ -31,8 +31,6 @@ namespace CpS301_API
 
             var connection = Startup.Configuration["connectionStrings:wsoappDBConnectionString"];
             services.AddDbContext<wsoappContext>(options => options.UseMySql(connection));
-
-            //}
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
