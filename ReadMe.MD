@@ -3,14 +3,15 @@
 
 ## Prerequisites
 
-Visual Studio 2017 and .NET Core 2.0.
-Ensure that your app.config has the appropriate connection string for the wsoapp MySQL DB.
+Visual Studio 2017 and .NET Core 2.0. and MySql Server installed with wsoapp as a database.
+Ensure that your app.config has the appropriate connection string for the wsoapp MySQL DB
+which can be found in the appSettings.json file.
 
 ## Setup
 Open sln file with Visual Studio 2017 and hit run
 
 ## Use
-Navigate to ```url forthcoming```.
+Navigate to ```localhost:9090``` in development.
 
 ## Authors
 [Cesar Whatley](www.linkedin.com)                                                                                                    
