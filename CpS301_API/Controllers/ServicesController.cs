@@ -27,6 +27,23 @@ namespace CpS301_API.Controllers
             return _context.Service;
         }
 
+        //Adding extra code here
+        [HttpGet("serviceEvents/{id}")]
+        public async Task<IActionResult> GetServiceEvents([FromRoute] int id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var result = from service in _context.Service
+                     join serviceEvent in _context.Serviceevent on service.ServiceId equals serviceEvent.ServiceId
+                     where serviceEvent.ServiceId == id
+                     select serviceEvent;
+
+            return Ok(result);
+        }
+
         // GET: api/Services/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetService([FromRoute] int id)
