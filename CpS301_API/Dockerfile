@@ -14,7 +14,8 @@ RUN dotnet publish --output /app/ --configuration Release
 
 # Stage 2
 FROM microsoft/aspnetcore
-ENV connectionStrings:wsoappDBConnectionString
+ARG conString=default_value
+ENV connectionStrings:wsoappDBConnectionString=$conString
 WORKDIR /app
 COPY --from=builder /app .
 EXPOSE 3038
