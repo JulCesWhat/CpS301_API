@@ -6,6 +6,9 @@
 Visual Studio 2017 and .NET Core 2.0.
 Ensure that your app.config has the appropriate connection string for the wsoapp MySQL DB.
 
+## Setup
+Open sln file with Visual Studio 2017 and hit run
+
 ## Use
 Navigate to ```url forthcoming```.
 
