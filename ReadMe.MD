@@ -16,6 +16,10 @@ Go inside the fodler and open sln file with Visual Studio 2017.
 
 Run the program will add the needed pakcages and then navigate to ```localhost:9090``` in development.
 
+## App is on the Cloud
+
+Open the browser and type `http://cps301-api.cesarwhatley.com/api/Services`.
+
 ## Authors
 
 [Cesar Whatley](https://www.linkedin.com/in/julio-whatley-773536110/)
