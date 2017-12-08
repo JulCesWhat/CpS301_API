@@ -24,3 +24,4 @@ Open the browser and type `http://cps301-api.cesarwhatley.com/api/Services`.
 
 [Cesar Whatley](https://www.linkedin.com/in/julio-whatley-773536110/)
 [Juan Alvarado](www.linkedin.com)
+[Adoni Hernandez](www.linkedin.com)
