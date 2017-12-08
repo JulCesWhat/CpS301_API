@@ -36,10 +36,10 @@ namespace CpS301_API.Controllers
                 return BadRequest(ModelState);
             }
 
-            var result = from service in _context.Service
+            var result = (from service in _context.Service
                          join person in _context.Person
                          on service.SongleaderId equals person.PersonId
-                         select person;
+                         select person).Distinct();
 
 
             return Ok(result);
