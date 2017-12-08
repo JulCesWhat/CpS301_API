@@ -24,7 +24,12 @@ namespace CpS301_API.Controllers
         [HttpGet]
         public IEnumerable<Service> GetService()
         {
-            return _context.Service;
+            //return _context.Service;
+            var result = from service in _context.Service
+                         orderby service.SvcDateTime
+                         select service;
+
+            return result;
         }
 
         //Adding extra code here
